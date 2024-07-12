@@ -1,4 +1,5 @@
-## addressbook
+## addressbook 
+hosted: https://addressbook-production-5ab4.up.railway.app/status
 
 ### Description
 This is a simple address book application, that allows users to register/login and add contacts to their address book. 
@@ -25,23 +26,22 @@ This is a simple address book application, that allows users to register/login a
 - and proceed to use POSTMAN to test the endpoints. (added into test folder)
 
 ### Endpoints
-- GET /status 
+- GET /status \
     to check service status 
-- POST /register
-    register a new account
-    email, password are required. 
-    (email is unique)
+- POST /register \
+    register a new account \
+    email, password are required. \
+    (email is unique) \
     password is stored in db with sha256 hash
-- POST /login
-    login to an account
-    email, password are required
-    password is checked against stored hash
+- POST /login \
+    login to an account \
+    email, password are required \
+    password is checked against stored hash \
     jwt token is generated and returned as cookie
-- POST /new-contact
-    add a new contact to the address book (firebase)
-    [firstName, lastName, address, phoneNumber] are possible fields, no mandatory fields
-    jwt token is required from login in headers as cookie.
+- POST /new-contact \
+    add a new contact to the address book (firebase) \
+    [firstName, lastName, address, phoneNumber] are possible fields, no mandatory fields \
+    jwt token is required from login in headers as cookie. \
 
-for any questions reach out to me
-hudek.derek@gmail.com
-
+ \
+for any questions reach out to me \
